@@ -1,0 +1,408 @@
+
+/* 
+    ********************************************************************************
+    ********************************************************************************
+                                        home section
+    ********************************************************************************
+    ********************************************************************************
+*/
+
+.main-ul{
+    font-weight: 500;
+    border-right: 1px solid rgba(179, 177, 177, 0.473);
+}
+.home{
+    background-image: url(../img/bg-image-28.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.home2{
+    background-image: url(../img/bg-image-29.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.411);
+    width: 100%;
+    height: 100%;
+}
+
+.home-div{
+    position: absolute;
+    left: 15%;
+    top: 40%;
+}
+.home-h3{
+    font-size: 95px;
+    font-weight: 800;
+}
+@media (max-width: 576px){
+    .home-h3{
+        font-size: 55px;
+        font-weight: 700;
+
+    }
+
+}
+.btnn{
+    padding: 11px 35px ;
+    margin-left: 5px;
+}
+
+.carousel .slid-l{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 10px;
+    border: solid 1px #fff;
+}
+
+.carousel .slid-r{
+    position: absolute;
+    top: 58%;
+    left: -566%;
+
+    padding: 10px;
+    border: solid 1px #fff;
+}
+
+/* 
+    ********************************************************************************
+    ********************************************************************************
+                                        us section
+    ********************************************************************************
+    ********************************************************************************
+*/
+#us .content{
+    margin: 100px;
+}
+#us .us-p{
+    position: relative;
+}
+#us .us-p::after{
+    content: "";
+    position: absolute;
+    color: turquoise;
+    transform: translate(6%);
+    animation: text 3.5s alternate infinite ;
+    font-weight: 700;
+}
+@keyframes text{
+    10%{content: "so|";}
+    20%{content: "soft|";}
+    30%{content: "softwa|";}
+    40%{content: "softwars|";}
+    50%{content: "a|";}
+    57%{content: "ap|";}
+    64%{content: "app|";}
+    71%{content: "apps|";}
+    80%{content: "we|";}
+    90%{content: "webs|";}
+    100%{content: "websits|";}
+}
+#us .botn{
+    font-size: 11px;
+    background-color: transparent;
+}
+#us .botn:hover{
+    background-color: #222;
+    color: white;
+}
+
+/* 
+    ********************************************************************************
+    ********************************************************************************
+                                        team section
+    ********************************************************************************
+    ********************************************************************************
+*/
+#team{
+    margin:140px auto;
+    border-top: 1px solid rgba(153, 153, 153, 0.548);
+    padding-top: 100px;
+}
+
+ .title-h2{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.932);
+    font-weight: 700;
+    position: relative;
+    z-index: 1000;
+
+}
+.title-h2::after{
+    content: "c";
+    position: absolute;
+    color: rgba(155, 147, 147, 0.288);
+    font-size: 100px;
+    font-weight: 600;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1000;
+
+}
+
+
+#team .imges{
+    position: relative;
+}
+#team .img{
+    background-color: rgba(29, 192, 241, 0.404);
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+
+}
+#team .imges:hover .img{
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    transition: all 0.5s;
+}
+#team .team-h6{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    /* opacity: 0;
+    visibility: hidden; */
+
+}
+#team .white-p{
+    position: absolute;
+    bottom: 0;
+    transform: translate(0,55%);
+    font-size: 12px;
+    color: white;
+    /* opacity: 0;
+    visibility: hidden; */
+}
+
+/* 
+    ********************************************************************************
+    ********************************************************************************
+                                        work section
+    ********************************************************************************
+    ********************************************************************************
+*/
+#work{
+    margin-top: 70px auto;
+    padding: 90px;
+    background-color: #444;
+}
+.arrow{
+    margin-bottom: 60px;
+}
+.arrow .fa{
+font-size: 60px;
+font-weight: 800;
+color: teal;
+}
+.arrow h5{
+    font-size: 14px;
+}
+
+.title1-h2{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.932);
+    font-weight: 700;
+    position: relative;
+    z-index: 1000;
+
+}
+.title1-h2::after{
+    content: "w";
+    position: absolute;
+    color: rgba(155, 147, 147, 0.288);
+    font-size: 100px;
+    font-weight: 600;
+    top: 0%;
+    left: 10%;
+    transform: translate(-70%,-50%);
+    z-index: -1000;
+
+}
+
+.cheks .fa{
+    font-size: 24px;
+
+
+}
+@media (max-width:576px){
+    .offset-2{
+        margin: 0;
+    }
+}
+
+/* 
+    ********************************************************************************
+    ********************************************************************************
+                                        price section
+    ********************************************************************************
+    ********************************************************************************
+*/
+#price{
+    padding: 230px 0;
+    margin-bottom: 0px;
+    background-color: rgba(235, 232, 232, 0.801);
+}
+#price .price-span{
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+    transform: translate(5%,-50%);
+}
+#price .prime{
+    color: rgb(23, 170, 170);
+    font-weight: 700;
+    
+}
+
+.price-spans{
+    border-bottom: 1px solid rgba(216, 213, 213, 0.445);
+    margin-bottom: 15px;
+}
+
+#price .price-p{
+    color: #888;
+}
+.bton{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+
+@media (max-width: 576px){
+    .my-5{
+        margin: 48px 0 0;
+    }
+}
+
+/*
+ **********
+   slider 
+ **********
+ */
+.slider{
+    padding: 70px  15px 30px;
+    width: 70%;
+    margin: auto;
+}
+.slider .img{
+    width: 10%;
+    height: 28%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.slider-h3{
+    font-weight: 700;
+}
+.slider-span{
+    color: #555;
+}
+.slider-p{
+    color: #888;
+}
+.s-indicators li{
+    background-color: rgb(25, 105, 224);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    
+}
+.s-indicators{
+    bottom: 0;
+    transform: translate(0,250%);
+}
+.sl{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+.sr{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+.price-cards{
+    position: relative;
+}
+.price-cards::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    border-width: 15px 15px 0 0;
+    border-color: #efeded rgb(23, 170, 170);
+    border-style: solid;
+    /* display: block; */
+    left: 0;
+    top: 0;
+    transform: translate(-100%,-320%);
+}
+
+@media (max-width: 576px){
+    .carousel-control-prev{
+        display: none;
+    }
+    .carousel-control-next{
+        display: none;
+    }
+    .slider{
+        width: 100%;
+        margin: 0;
+    }
+    .slider .img{
+        width: 22%;
+        height: 22%;
+    }
+}
+/* 
+    ********************************************************************************
+    ********************************************************************************
+                                        contact section
+    ********************************************************************************
+    ********************************************************************************
+*/
+
+.chlid-map{
+    height: 100%;
+
+}
+.mapp{
+    margin-left: 2px;
+    width: 100%;
+    height: 100%;
+}
+.content2{
+    margin: 110px 80px 20px;
+}
+.title2-h2{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.932);
+    font-weight: 700;
+    position: relative;
+    z-index: 1000;
+
+}
+.title2-h2::after{
+    content: "G";
+    position: absolute;
+    color: rgba(155, 147, 147, 0.288);
+    font-size: 80px;
+    font-weight: 600;
+    top: 0%;
+    left: 10%;
+    transform: translate(-130%,-45%);
+    z-index: -1000;
+
+}
